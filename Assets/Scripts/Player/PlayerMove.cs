@@ -13,21 +13,27 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float jumpHeight;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] BoxCollider2D playerBox;
+    bool isGrounded;
 
+    [SerializeField] Transform playerTransdorm;
     [SerializeField] float dashSpeed;
-
-
+    bool canDash;
 
     void Update()
     {
+        IsGrounded();
         MovePlayer();
         JumpPlayer();
     }
 
-    private bool IsGrounded()
+    private void IsGrounded()
     {
         RaycastHit2D isOnGround = Physics2D.BoxCast(playerBox.bounds.center, playerBox.bounds.size + new Vector3(0.1f, 0.1f, 0.1f), 0, Vector2.down, 0.01f, groundLayer);
-        return isOnGround.collider != null;
+        isGrounded = isOnGround.collider != null;
+        if (isGrounded)
+        {
+            canDash = true;
+        }
     }
 
     private void MovePlayer()
@@ -38,9 +44,17 @@ public class PlayerMove : MonoBehaviour
 
     private void JumpPlayer()
     {
-        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             playerBody.velocity = new Vector2(playerBody.velocity.x, jumpHeight);
+        }
+    }
+
+    private void DashPlayer()
+    {
+        if (canDash && Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            
         }
     }
 }
