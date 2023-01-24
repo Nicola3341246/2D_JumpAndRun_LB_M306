@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -38,7 +39,6 @@ public class PlayerMove : MonoBehaviour
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             playerBody.velocity = new Vector2(playerBody.velocity.x, jumpHeight);
-            Debug.Log("dfzaugskdfgefkuzgglzksdkgzufzuergzagzfrgaakreeae");
         }
     }
 }
