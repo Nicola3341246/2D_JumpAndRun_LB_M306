@@ -279,6 +279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6100c7ce4c8afbc458090911034b59a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerBody: {fileID: 1042384530}
+  walkSpeed: 10
 --- !u!61 &1042384529
 BoxCollider2D:
   m_ObjectHideFlags: 0

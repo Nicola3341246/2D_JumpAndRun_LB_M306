@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] Rigidbody2D playerBody;
+    [SerializeField] float walkSpeed;
+    float walkDirection;
 
-    // Update is called once per frame
+
+
     void Update()
     {
-        
+        MovePlayer();
+        JumpPlayer();
+    }
+
+    private void MovePlayer()
+    {
+        walkDirection = Input.GetAxis("Horizontal");
+        playerBody.velocity = new Vector2(walkSpeed * walkDirection * Time.deltaTime, 0);
+    }
+
+    private void JumpPlayer()
+    {
+
     }
 }
