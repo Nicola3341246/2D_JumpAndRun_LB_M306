@@ -12,7 +12,7 @@ public class EnemyMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -31,9 +31,9 @@ public class EnemyMove : MonoBehaviour
         {
             walkDirection = 1;
         }
-        EnemyBody.velocity = new Vector2(walkDirection * walkSpeed, EnemyBody.velocity.y);
+        EnemyBody.velocity = new Vector2(walkDirection * walkSpeed * 5, EnemyBody.velocity.y);
 
-       
+
 
     }
 }

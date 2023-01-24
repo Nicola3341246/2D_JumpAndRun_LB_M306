@@ -14,7 +14,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] LayerMask groundLayer;
     [SerializeField] BoxCollider2D playerBox;
 
-    [SerializeField] float dashSpeed
+    [SerializeField] float dashSpeed;
 
 
 
