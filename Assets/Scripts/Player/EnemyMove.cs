@@ -6,7 +6,8 @@ public class EnemyMove : MonoBehaviour
 {
     [SerializeField] Rigidbody2D EnemyBody;
     [SerializeField] float walkSpeed;
-    float walkDirection;
+    float walkDirection = 1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,22 @@ public class EnemyMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        EnemyBody.velocity= Vector3.zero;
+        MoveEnemy();
+    }
+
+    private void MoveEnemy()
+    {
+        if (EnemyBody.velocity.x == 0 && walkDirection == 1)
+        {
+            walkDirection = -1;
+        }
+        else if (EnemyBody.velocity.x == 0 && walkDirection == -1)
+        {
+            walkDirection = 1;
+        }
+        EnemyBody.velocity = new Vector2(walkDirection * walkSpeed, EnemyBody.velocity.y);
+
+       
 
     }
 }
