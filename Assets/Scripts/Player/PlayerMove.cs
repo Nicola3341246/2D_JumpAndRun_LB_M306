@@ -19,7 +19,7 @@ public class PlayerMove : MonoBehaviour
     private void MovePlayer()
     {
         walkDirection = Input.GetAxis("Horizontal");
-        playerBody.velocity = new Vector2(walkSpeed * walkDirection * Time.deltaTime, 0);
+        playerBody.velocity = new Vector2(walkSpeed * walkDirection, playerBody.velocity.y);
     }
 
     private void JumpPlayer()
