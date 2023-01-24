@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 118154093}
   - component: {fileID: 118154095}
   - component: {fileID: 118154094}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TestGround (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,6 +412,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBody: {fileID: 1042384530}
   walkSpeed: 10
+  jumpHeight: 15
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  playerBox: {fileID: 1042384529}
 --- !u!61 &1042384529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -472,7 +477,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -563,7 +568,7 @@ GameObject:
   - component: {fileID: 1505886444}
   - component: {fileID: 1505886446}
   - component: {fileID: 1505886445}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TestGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
