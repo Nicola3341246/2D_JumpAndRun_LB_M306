@@ -22,15 +22,6 @@ public class EnemyMove : MonoBehaviour
     void Update()
     {
         MoveEnemy();
-
-
-
-        
-
-        
-
-
-
     }
 
     private void MoveEnemy()
@@ -57,22 +48,6 @@ public class EnemyMove : MonoBehaviour
         }
     }
 
-    /*void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.tag == "Player")
-        {
-            Scene scene = SceneManager.GetActiveScene(); SceneManager.UnloadScene(scene.buildIndex); SceneManager.SetActiveScene(scene);
-        }
-    }
-    private void ContactWithPlayer()
-    {
-        void OnCollisionEnter(Collision col)
-        {
-            if (col.gameObject.tag == "Player")
-            {
-                Scene scene = SceneManager.GetActiveScene(); SceneManager.UnloadScene(scene.buildIndex); SceneManager.SetActiveScene(scene);
-            }
-        }
-    }*/
+    
 
 }
