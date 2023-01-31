@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class EnemyMove : MonoBehaviour
 {
     [SerializeField] Rigidbody2D EnemyBody;
     [SerializeField] float walkSpeed;
     float walkDirection = 1;
+    [SerializeField] string spielerTag;
 
 
     // Start is called before the first frame update
@@ -19,6 +22,15 @@ public class EnemyMove : MonoBehaviour
     void Update()
     {
         MoveEnemy();
+
+
+
+        
+
+        
+
+
+
     }
 
     private void MoveEnemy()
@@ -36,4 +48,31 @@ public class EnemyMove : MonoBehaviour
 
 
     }
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == spielerTag)
+        {
+            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+            
+        }
+    }
+
+    /*void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            Scene scene = SceneManager.GetActiveScene(); SceneManager.UnloadScene(scene.buildIndex); SceneManager.SetActiveScene(scene);
+        }
+    }
+    private void ContactWithPlayer()
+    {
+        void OnCollisionEnter(Collision col)
+        {
+            if (col.gameObject.tag == "Player")
+            {
+                Scene scene = SceneManager.GetActiveScene(); SceneManager.UnloadScene(scene.buildIndex); SceneManager.SetActiveScene(scene);
+            }
+        }
+    }*/
+
 }

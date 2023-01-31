@@ -754,6 +754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyBody: {fileID: 773271965}
   walkSpeed: 1
+  spielerTag: Spieler
 --- !u!61 &773271964
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -926,7 +927,7 @@ GameObject:
   - component: {fileID: 1042384528}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Spieler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
