@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 36285e6bc13ab0b45a2fdb8428396991
+guid: c5c53b9b63d757b4a9ff65582f959e28
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,169 +107,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main_Charakter_LeftWalk_0
+      name: Grass_Ground_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 2
-        width: 19
-        height: 26
+        x: 0
+        y: 144
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f00370564a222146ac5c8778f6f0cc4
-      internalID: 94259870
+      spriteID: 37ba1a13516b4d54ca27740f76253f2b
+      internalID: -273246695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Charakter_LeftWalk_1
+      name: Grass_Ground_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 2
-        width: 19
-        height: 27
+        x: 17
+        y: 144
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6a215b1a66b87a4595debfd024f35ee
-      internalID: -1203738843
+      spriteID: a1b4d1bb528a2614fb21df21ee105ead
+      internalID: 1982370890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Charakter_LeftWalk_2
+      name: Grass_Ground_2
       rect:
         serializedVersion: 2
-        x: 70
-        y: 3
-        width: 19
-        height: 27
+        x: 34
+        y: 144
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b37672fb3df4d434d915ccc93808085f
-      internalID: -864912978
+      spriteID: 9347a48d3651ff14d8164da054a15c21
+      internalID: 1890171682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Charakter_LeftWalk_3
+      name: Grass_Ground_3
       rect:
         serializedVersion: 2
-        x: 102
-        y: 3
-        width: 18
-        height: 29
+        x: 0
+        y: 127
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a52f799afcbf1d47b828317a3a05974
-      internalID: -690655311
+      spriteID: 2d21e322bd9612345ab622dc639ad2c6
+      internalID: 397074574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Charakter_LeftWalk_4
+      name: Grass_Ground_4
       rect:
         serializedVersion: 2
-        x: 133
-        y: 2
-        width: 22
-        height: 28
+        x: 17
+        y: 127
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75b1edcfbf7c8b2479a4f53456a0cdb6
-      internalID: -978473858
+      spriteID: 792a551fbc35bef479bbd8d2c6536724
+      internalID: 801475943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Charakter_LeftWalk_5
+      name: Grass_Ground_5
       rect:
         serializedVersion: 2
-        x: 166
-        y: 2
-        width: 21
-        height: 27
+        x: 34
+        y: 127
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46a8dfecee72c4948a3c6732aa574ae3
-      internalID: -1455582216
+      spriteID: 3da1f5f094652ab4ab7178451008f16b
+      internalID: 2036003373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Charakter_LeftWalk_6
+      name: Grass_Ground_6
       rect:
         serializedVersion: 2
-        x: 198
-        y: 3
-        width: 22
-        height: 27
+        x: 0
+        y: 110
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0bf3b856c33d834c8d180efe51d0137
-      internalID: 1802294967
+      spriteID: ce2031d168e06c74e8c7c68a418319bb
+      internalID: -1752882792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Charakter_LeftWalk_7
+      name: Grass_Ground_7
       rect:
         serializedVersion: 2
-        x: 230
-        y: 4
-        width: 19
-        height: 28
+        x: 17
+        y: 110
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8b009c5f00e69848b86c9c3102ece22
-      internalID: -1009011745
+      spriteID: b1ae100cd11ec3148b5c52e4ff58ef1f
+      internalID: 2076369669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_Ground_8
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 110
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acccfc952ac27b4080077a09d9f2c60
+      internalID: 1699369579
       vertices: []
       indices: 
       edges: []
@@ -285,14 +306,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Main_Charakter_LeftWalk_3: -690655311
-      Main_Charakter_LeftWalk_4: -978473858
-      Main_Charakter_LeftWalk_1: -1203738843
-      Main_Charakter_LeftWalk_2: -864912978
-      Main_Charakter_LeftWalk_0: 94259870
-      Main_Charakter_LeftWalk_5: -1455582216
-      Main_Charakter_LeftWalk_6: 1802294967
-      Main_Charakter_LeftWalk_7: -1009011745
+      Grass_Ground_8: 1699369579
+      Grass_Ground_7: 2076369669
+      Grass_Ground_6: -1752882792
+      Grass_Ground_5: 2036003373
+      Grass_Ground_4: 801475943
+      Grass_Ground_0: -273246695
+      Grass_Ground_2: 1890171682
+      Grass_Ground_3: 397074574
+      Grass_Ground_1: 1982370890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
