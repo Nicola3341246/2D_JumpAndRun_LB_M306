@@ -881,7 +881,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   playerBox: {fileID: 1042384529}
-  dashSpeed: 0
+  playerTransform: {fileID: 1042384532}
+  dashSpeed: 50
+  dashTime: 200
 --- !u!61 &1042384529
 BoxCollider2D:
   m_ObjectHideFlags: 0

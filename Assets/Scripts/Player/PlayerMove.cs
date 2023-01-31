@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -15,15 +16,23 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] BoxCollider2D playerBox;
     bool isGrounded;
 
-    [SerializeField] Transform playerTransdorm;
+    [SerializeField] Transform playerTransform;
     [SerializeField] float dashSpeed;
+    [SerializeField] float dashTime;
+    Stopwatch dashTimer = new Stopwatch();
     bool canDash;
+
+    private void Start()
+    {
+        dashTimer.Start();
+    }
 
     void Update()
     {
         IsGrounded();
         MovePlayer();
         JumpPlayer();
+        DashPlayer();
     }
 
     private void IsGrounded()
@@ -39,7 +48,10 @@ public class PlayerMove : MonoBehaviour
     private void MovePlayer()
     {
         walkDirection = Input.GetAxis("Horizontal");
-        playerBody.velocity = new Vector2(walkSpeed * walkDirection, playerBody.velocity.y);
+        if (dashTimer.ElapsedMilliseconds > dashTime)
+        {
+            playerBody.velocity = new Vector2(walkSpeed * walkDirection, playerBody.velocity.y);
+        }
     }
 
     private void JumpPlayer()
@@ -52,9 +64,21 @@ public class PlayerMove : MonoBehaviour
 
     private void DashPlayer()
     {
-        if (canDash && Input.GetKeyDown(KeyCode.LeftShift))
+        if (canDash && Input.GetKeyDown(KeyCode.LeftShift) && !isGrounded)
         {
-            
+            dashTimer.Restart();
+            if (walkDirection < 0)
+            {
+                canDash = false;
+                dashTimer.Restart();
+                playerBody.velocity = new Vector2(dashSpeed * -1, playerBody.velocity.y);
+            }
+            else if (walkDirection > 0)
+            {
+                canDash = false;
+                dashTimer.Restart();
+                playerBody.velocity = new Vector2(dashSpeed, playerBody.velocity.y);
+            }
         }
     }
 }
