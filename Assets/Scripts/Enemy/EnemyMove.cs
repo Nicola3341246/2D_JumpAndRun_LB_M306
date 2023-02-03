@@ -9,7 +9,6 @@ public class EnemyMove : MonoBehaviour
     [SerializeField] Rigidbody2D EnemyBody;
     [SerializeField] float walkSpeed;
     float walkDirection = 1;
-    [SerializeField] string spielerTag;
 
 
     // Start is called before the first frame update
@@ -39,14 +38,7 @@ public class EnemyMove : MonoBehaviour
 
 
     }
-    private void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.tag == spielerTag)
-        {
-            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
-            
-        }
-    }
+    
 
     
 

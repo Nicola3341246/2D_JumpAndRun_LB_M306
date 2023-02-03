@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] Rigidbody2D playerBody;
+    [SerializeField] Animator playerAnimator;
     [SerializeField] float walkSpeed;
     float walkDirection;
 
@@ -48,6 +49,7 @@ public class PlayerMove : MonoBehaviour
     private void MovePlayer()
     {
         walkDirection = Input.GetAxis("Horizontal");
+        playerAnimator.SetFloat("Direction", walkDirection);
         if (dashTimer.ElapsedMilliseconds > dashTime)
         {
             playerBody.velocity = new Vector2(walkSpeed * walkDirection, playerBody.velocity.y);
