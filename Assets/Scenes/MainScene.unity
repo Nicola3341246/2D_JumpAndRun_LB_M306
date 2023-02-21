@@ -4070,7 +4070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39051a407317d0a4897c4d2333152cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spielerTag: 
+  spielerTag: Spieler
 --- !u!61 &1193096627
 BoxCollider2D:
   m_ObjectHideFlags: 0
