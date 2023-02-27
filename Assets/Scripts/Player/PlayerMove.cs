@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEditor.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class PlayerMove : MonoBehaviour
@@ -34,6 +35,7 @@ public class PlayerMove : MonoBehaviour
         MovePlayer();
         JumpPlayer();
         DashPlayer();
+        LoadMenuScene();
     }
 
     private void IsGrounded()
@@ -81,6 +83,14 @@ public class PlayerMove : MonoBehaviour
                 dashTimer.Restart();
                 playerBody.velocity = new Vector2(dashSpeed, playerBody.velocity.y);
             }
+        }
+    }
+
+    private void LoadMenuScene()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }
